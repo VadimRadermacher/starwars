@@ -5,21 +5,42 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
   <meta charset="UTF-8">
+  <script type="text/javascript">
+    var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+    if(!isChrome){
+    $('#iframeAudio').remove()
+    }
+    else{
+    $('#playAudio').remove()
+    }
+  </script>
   <title></title>
 </head>
 <body>
-  <div class="text">
+    <div class="text">
     <marquee direction="up" scrollamount="3">
-      Lorem ipsum dolor sit amet, ei enim unum vocibus mea, libris omnesque rationibus mea ea, per ex esse consetetur definitiones. Novum audire virtute ex duo, etiam iuvaret indoctum te vel, munere sapientem interesset vel ea. Est eu ubique aeterno, ipsum quidam cotidieque ei pri. Id est libris suscipit, in nihil aeterno civibus vix. Iriure fierent philosophia cu mea, modus saperet usu et.
-
-      Eam ea commune assentior, id est oportere rationibus. Vix et movet tantas, cu eum enim scaevola. Periculis repudiandae eam ut, est id alterum ornatus temporibus. Cu ludus nostro adipisci cum, altera nusquam duo te.
-
-      His eruditi accusata consequuntur te, magna oratio in ius. Sea ea mollis oportere consetetur, id usu elit nostrud, tritani utroque mei ne. Id inani recusabo consequat sea, pri dico libris necessitatibus et, in est luptatum conceptam. Doming civibus conclusionemque te mea, cum eu iuvaret offendit reformidans. Justo efficiendi pro in, no quo alia pertinacia, et voluptua moderatius mel.
-
-      No per erat nihil posidonium, ea quo wisi omnis, persius ponderum ad mei. Ut est brute nusquam, te pro fabellas lobortis inimicus, eleifend scribentur sed et. Ius ut eros aliquando percipitur. Nec quod molestiae ea, eos aliquip officiis adolescens in, et veniam utinam propriae sed.
-
-      Eam unum audire at, nulla quaeque verterem sit ei. Id ancillae hendrerit sententiae eam, mei no habeo nominati evertitur, vis ei justo eruditi luptatum. Ut enim vide nonumes mea, te minim novum graecis has. Porro quidam facete an sed, per te quem quod doming. His deseruisse incorrupte accommodare id, et nam tollit repudiandae.
+      <p class="ago"> A long time ago.. </p>
+      <p class="txt">
+        Pour bien commencer ma petite journée et me réveiller moi j'ai pris un café
+        un arabica, noir et bien corsé, j'enfile ma parka, ça y est j'peux y aller.
+        A huit heure moins le quart, faut bien l'avouer, les bureaux sont vides, on pourrait s'ennuyer
+        Sans Faute !</p>
+      <p class="txt">
+        Café et chocolat:
+        On va commencer par le café</p>
+      <p class="txt">
+        La plus grand addiction</p>
+      <p class="txt">
+        Quand tu arrives au boulot, pour patienter, hop un peu de café , puis c'est partit pour les
+        dossiers, encore un café, après m'être énervé, à cause de ces dossiers , encore du café.</p>
+      <p class="txt">
+        Sans Faute !
+      </p>
     </marquee>
   </div>
+  <audio autoplay src="zik.mp3">
+  <iframe src="zik.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+  </iframe>
+  </audio>
 </body>
 </html>
