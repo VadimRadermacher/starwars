@@ -1,0 +1,16 @@
+body {
+text-align: center;
+color:orange;
+background-image: url("fond.jpg");
+width:30%;
+margin-left:33%;
+font-size: 20pt;
+}
+marquee{
+  height:600px;
+}
+.text {
+  transform:rotate3d(1, 1, 1, 0deg);
+  transform:perspective(70px) rotateX(8deg);
+  line-height: 50px;
+}
