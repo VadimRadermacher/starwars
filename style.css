@@ -3,14 +3,17 @@ text-align: center;
 color:orange;
 background-image: url("fond.jpg");
 width:30%;
-margin-left:33%;
+position: fixed;
+padding-left:33%;
 font-size: 20pt;
+font-family: 'Anton', sans-serif;
 }
 marquee{
-  height:600px;
+  height:400px;
 }
 .text {
+  text-align: center;
   transform:rotate3d(1, 1, 1, 0deg);
-  transform:perspective(70px) rotateX(8deg);
+  transform:perspective(70px) rotateX(15deg);
   line-height: 50px;
 }
