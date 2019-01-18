@@ -8,7 +8,7 @@ font-size: 20pt;
 font-family: 'Anton', sans-serif;
 }
 marquee{
-  height:400px;
+  height:600px;
   text-align: center;
 }
 .text {
@@ -25,148 +25,54 @@ marquee{
     color:darkblue;
     text-align: center;
   }
-/*
-    animation:fadeout 2s steps(9);
-    -moz-animation: fadeout 2s;
-    -webkit-animation: fadeout 2s;
-    -o-animation: fadeout 2s;
-  }
-  @keyframes fadeout {
-    from {
-        opacity:0;
-    }
-    10% {
-      opacity:0.2;
-    }
-    20% {
-      opacity:0.4;
-    }
-    30% {
-      opacity: 0.6;
-    }
-    40% {
-      opacity: 0.8;
-     }
-     50% {
-       opacity: 1;
-     }
-     60% {
-       opacity: 0.8;
-     }
-     70% {
-       opacity: 0.6;
-     }
-     80% {
-       opacity:0.4;
-     }
-     90% {
-       opacity: 0.2;
-     }
+img {
+-webkit-animation: fadein 10s;
+-webkit-animation-duration: 10s;
+-webkit-animation-fill-mode: both;
+position: absolute;
+left:57%;
+}
+
+@keyframes fadein {
+from { opacity: 1; }
+to { opacity: 0; }
+}
+
+  /*
+  img {
+    animation:fadeout;
+     transition-timing-function: ease-in;
+     transition: 2s;
+     transform: fadeout;
+      }
+  @keyframes img {
+    0% {
+        opacity:1;
+      }
     to {
         opacity:0;
     }
 }
-@-moz-keyframes fadeout {
+@-moz-keyframes img {
     from {
-        opacity:0;
+        opacity:1;
     }
-    10% {
-      opacity:0.2;
-    }
-    20% {
-      opacity:0.4;
-    }
-    30% {
-      opacity: 0.6;
-    }
-    40% {
-      opacity: 0.8;
-     }
-     50% {
-       opacity: 1;
-     }
-     60% {
-       opacity: 0.8;
-     }
-     70% {
-       opacity: 0.6;
-     }
-     80% {
-       opacity:0.4;
-     }
-     90% {
-       opacity: 0.2;
-     }
     to {
         opacity:0;
     }
 }
 @-webkit-keyframes fadeout {
     from {
-        opacity:0;
+        opacity:1;
     }
-    10% {
-      opacity:0.2;
-    }
-    20% {
-      opacity:0.4;
-    }
-    30% {
-      opacity: 0.6;
-    }
-    40% {
-      opacity: 0.8;
-     }
-     50% {
-       opacity: 1;
-     }
-     60% {
-       opacity: 0.8;
-     }
-     70% {
-       opacity: 0.6;
-     }
-     80% {
-       opacity:0.4;
-     }
-     90% {
-       opacity: 0.2;
-     }
     to {
         opacity:0;
     }
 }
 @-o-keyframes fadeout {
     from {
-        opacity:0;
+        opacity:1;
     }
-    10% {
-      opacity:0.2;
-    }
-    20% {
-      opacity:0.4;
-    }
-    30% {
-      opacity: 0.6;
-    }
-    40% {
-      opacity: 0.8;
-     }
-     50% {
-       opacity: 1;
-     }
-     60% {
-       opacity: 0.8;
-     }
-     70% {
-       opacity: 0.6;
-     }
-     80% {
-       opacity:0.4;
-     }
-     90% {
-       opacity: 0.2;
-     }
     to {
         opacity: 0;
     }
